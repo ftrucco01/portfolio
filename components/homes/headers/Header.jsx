@@ -1,83 +1,56 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Menu from "../menus/Menu";
-import { menuItems } from "@/data/menu";
-import Image from "next/image";
-import Link from "next/link";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header() {
-  const [darkMode, setDarkMode] = useState(false);
-  const addDarkbg = () => {
-    if (
-      document.body.style.backgroundImage !=
-      "url(/assets/img/bg/page-bg-dark-1.jpg"
-    ) {
-      document.body.style.backgroundImage =
-        "url(/assets/img/bg/page-bg-dark-1.jpg";
+  const [language, setLanguage] = useState('en');
+  const switchLanguage = () => {
+    setLanguage(prevLanguage => prevLanguage === 'en' ? 'es' : 'en');
+  };
 
+  const [darkMode, setDarkMode] = useState(false);
+  const handleDarkmode = () => {
+    const currentState = localStorage.getItem("idDarkMode");
+    const isDarkMode = JSON.parse(currentState);
+
+    if (isDarkMode) {
+      localStorage.setItem("idDarkMode", false);
+      document.body.classList.remove("dark-theme");
+      document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-1.jpg)";
+      setDarkMode(false);
+    } else {
+      localStorage.setItem("idDarkMode", true);
+      document.body.classList.add("dark-theme");
+      document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-dark-1.jpg)";
       setDarkMode(true);
     }
   };
 
-  const addlightBg = () => {
-    if (
-      document.body.style.backgroundImage != "url(/assets/img/bg/page-bg-1.jpg)"
-    ) {
-      document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-1.jpg)";
-
-      setDarkMode(false);
-    }
-  };
-
-  const handleDarkmode = () => {
-    const currentState = localStorage?.getItem("idDarkMode");
-
-    if (JSON.parse(currentState) == true) {
-      localStorage.setItem("idDarkMode", false);
-      document.body.classList.remove("dark-theme");
-
-      addlightBg();
-    } else {
-      localStorage?.setItem("idDarkMode", true);
-      document.body.classList.add("dark-theme");
-      addDarkbg();
-    }
-  };
   const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
-    const currentState = localStorage?.getItem("idDarkMode");
-    if (JSON.parse(currentState) == true) {
+    const currentState = localStorage.getItem("idDarkMode");
+    const isDarkMode = JSON.parse(currentState);
+
+    if (isDarkMode) {
       document.body.classList.add("dark-theme");
-      addDarkbg();
+      document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-dark-1.jpg)";
     } else {
       document.body.classList.remove("dark-theme");
-      addlightBg();
+      document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-1.jpg)";
     }
   }, []);
 
   return (
-    <div className="bostami-header-area mb-30 ">
+    <div className="bostami-header-area mb-30" style={{ marginBottom: '15px' }}>
       <div className="container">
-        <div className="bostami-header-wrap">
-          <div className="row align-items-center">
-            <div className="col-6">
-              <div className="bostami-header-logo">
-                <Link className="site-logo" href="/">
-                  <Image
-                    width={153}
-                    height={32}
-                    src="/assets/img/logo/logo-2.png"
-                    alt="logo"
-                  />
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-6">
+        <div className="bostami-header-wrap" style={{ padding: '10px 0' }}>
+          <div className="row align-items-center" style={{ minHeight: 'auto' }}>
+            <div className="col-12">
               <div className="bostami-header-menu-btn text-right">
                 <div
                   className="dark-btn dark-btn-stored mode-btn"
-                  onClick={() => handleDarkmode()}
+                  onClick={handleDarkmode}
+                  style={{ margin: '0 10px' }}
                 >
                   {darkMode ? (
                     <i className="sunicon fa-light fa-sun-bright"></i>
@@ -85,9 +58,11 @@ export default function Header() {
                     <i className="moonicon fa-solid fa-moon"></i>
                   )}
                 </div>
+                <LanguageSwitcher currentLanguage={language} switchLanguage={switchLanguage} />
                 <div
-                  className={`menu-btn toggle_menu ${menuOpen && "active"} `}
-                  onClick={() => setMenuOpen((pre) => !pre)}
+                  className={`menu-btn toggle_menu ${menuOpen && "active"}`}
+                  onClick={() => setMenuOpen(prev => !prev)}
+                  style={{ margin: '0 5px' }}
                 >
                   <span></span>
                   <span></span>
@@ -97,13 +72,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-
-        <div className="mobile-menu-wrap">
-          <div className={`mobile-menu mobile_menu ${menuOpen && "active"} `}>
-            <Menu setMenuOpen={setMenuOpen} data={menuItems} />
-          </div>
-        </div>
       </div>
     </div>
-  );
+  );    
 }
