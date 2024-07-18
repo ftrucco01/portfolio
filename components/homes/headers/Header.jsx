@@ -1,18 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useLanguage } from "@/context/LanguageContext";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default function Header() {
-  const [language, setLanguage] = useState('en');
-  const switchLanguage = () => {
-    setLanguage(prevLanguage => prevLanguage === 'en' ? 'es' : 'en');
-  };
-
+  const { language, switchLanguage } = useLanguage();
   const [darkMode, setDarkMode] = useState(false);
+
   const handleDarkmode = () => {
     const currentState = localStorage.getItem("idDarkMode");
     const isDarkMode = JSON.parse(currentState);
-
     if (isDarkMode) {
       localStorage.setItem("idDarkMode", false);
       document.body.classList.remove("dark-theme");
@@ -26,11 +23,9 @@ export default function Header() {
     }
   };
 
-  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     const currentState = localStorage.getItem("idDarkMode");
     const isDarkMode = JSON.parse(currentState);
-
     if (isDarkMode) {
       document.body.classList.add("dark-theme");
       document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-dark-1.jpg)";
@@ -39,6 +34,8 @@ export default function Header() {
       document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-1.jpg)";
     }
   }, []);
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="bostami-header-area mb-30" style={{ marginBottom: '15px' }}>
@@ -58,7 +55,11 @@ export default function Header() {
                     <i className="moonicon fa-solid fa-moon"></i>
                   )}
                 </div>
-                <LanguageSwitcher currentLanguage={language} switchLanguage={switchLanguage} />
+                <LanguageSwitcher
+                  currentLanguage={language}
+                  switchLanguage={switchLanguage}
+                  isDarkMode={darkMode}
+                />
                 <div
                   className={`menu-btn toggle_menu ${menuOpen && "active"}`}
                   onClick={() => setMenuOpen(prev => !prev)}
@@ -74,5 +75,5 @@ export default function Header() {
         </div>
       </div>
     </div>
-  );    
+  );
 }
