@@ -1,10 +1,14 @@
+'use client';
 import { contactData } from "@/data/contactData";
 import { profileInfo } from "@/data/profileInfo";
 import { socialMediaData } from "@/data/socials";
 import Image from "next/image";
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function PersonalInfo() {
+  const { translations } = useLanguage();
+  
   return (
     <div className="col-xxl-3 col-xl-3">
       <div className="bostami-parsonal-info-area">
@@ -17,45 +21,43 @@ export default function PersonalInfo() {
               alt="avatar"
             />
           </div>
-
           <h4 className="bostami-parsonal-info-name">
             <a href="#">{profileInfo.name}</a>
           </h4>
-          <span className="bostami-parsonal-info-bio mb-15">{profileInfo.title}</span>
-
+          <span className="bostami-parsonal-info-bio mb-15">{translations.SOFTWARE_ENGINEER}</span>
           <ul className="bostami-parsonal-info-social-link mb-30">
             {socialMediaData.map((elm, i) => (
               <li key={i}>
-                <a style={{ color: elm.color }} href={elm.href}>
+                <a 
+                  style={{ color: elm.color }} 
+                  href={elm.href} 
+                  title={elm.tooltip}
+                  target="_blank"
+                >
                   <i className={elm.className}></i>
                 </a>
               </li>
             ))}
           </ul>
-
           <div className="bostami-parsonal-info-contact mb-30">
             {contactData.map((elm, i) => (
               <div key={i} className="bostami-parsonal-info-contact-item">
-                <div
-                  style={{ color: `${elm.color}`, fontSize: `${elm.fontSize}` }}
-                  className="icon"
-                >
+                <div style={{ color: elm.color, fontSize: elm.fontSize }} className="icon">
                   <i className={elm.iconClass}></i>
                 </div>
                 <div className="text">
-                  <span>{elm.text.label}</span>
-                  <p>{elm.text.value}</p>
+                  <span>{translations[elm.text.label] || elm.text.label}</span>
+                  <span>{translations[elm.text.value] || elm.text.value}</span>
                 </div>
               </div>
             ))}
           </div>
-
           <div className="bostami-parsonal-info-btn">
             <a className="btn-1" href="/cv.pdf" download >
               <span style={{ color: "#fff" }} className="icon">
                 <i className="fa-regular fa-download"></i>
               </span>
-              download cv
+              {translations.DOWNLOAD_CV}
             </a>
           </div>
         </div>

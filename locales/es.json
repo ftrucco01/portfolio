@@ -1,3 +1,9 @@
 {
-    "EDUCATION": "Educación"
+    "EDUCATION": "Educación",
+    "SOFTWARE_ENGINEER": "Ingeniero de Software",
+    "DOWNLOAD_CV": "Descargar CV",
+    "REMOTE": "Remoto",
+    "LOCATION": "Ubicación",
+    "PHONE_ARG": "Teléfono (Argentina)",
+    "PHONE_MEX": "Teléfono (Mexico)"
 }
