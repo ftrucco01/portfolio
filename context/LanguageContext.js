@@ -12,7 +12,10 @@ const LanguageContext = createContext();
  */
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(() => {
-    return localStorage.getItem('language') || 'en';
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('language') || 'en';
+    }
+    return 'en';
   });
   const [translations, setTranslations] = useState({});
 
@@ -22,7 +25,10 @@ export function LanguageProvider({ children }) {
         setTranslations(mod.default);
       })
       .catch(error => console.error("Failed to load translations", error));
-    localStorage.setItem('language', language);
+
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', language);
+    }
   }, [language]);
 
   const switchLanguage = () => {

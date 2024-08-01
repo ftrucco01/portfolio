@@ -5,5 +5,6 @@
     "REMOTE": "Remoto",
     "LOCATION": "Ubicación",
     "PHONE_ARG": "Teléfono (Argentina)",
-    "PHONE_MEX": "Teléfono (Mexico)"
+    "PHONE_MEX": "Teléfono (Mexico)",
+    "CV_LINK": "/cv_spanish.pdf"
 }

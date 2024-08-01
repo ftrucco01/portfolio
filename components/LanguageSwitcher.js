@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 /**
  * Component for switching languages.
@@ -10,6 +10,12 @@ import React from 'react';
  * @returns {JSX.Element} The rendered component.
  */
 function LanguageSwitcher({ currentLanguage, switchLanguage, isDarkMode }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   const style = {
     cursor: 'pointer',
     display: 'inline-flex',
@@ -26,7 +32,7 @@ function LanguageSwitcher({ currentLanguage, switchLanguage, isDarkMode }) {
 
   return (
     <div className="dark-btn dark-btn-stored mode-btn" onClick={switchLanguage} style={style}>
-      {currentLanguage === 'en' ? '🇪🇸' : '🇬🇧'}
+      {isClient ? (currentLanguage === 'en' ? '🇪🇸' : '🇬🇧') : null}
     </div>
   );
 }
