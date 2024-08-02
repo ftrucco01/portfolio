@@ -28,7 +28,7 @@ export default function AboutOne() {
 
         <div className="section-wrapper pl-60 pr-60">
           <div className="bostami-section-title-wrap mb-30">
-            <h3 className="section-title">What I do!</h3>
+            <h3 className="section-title">{translations.WHAT_I_DO}</h3>
           </div>
 
           <div className="bostami-what-do-wrap mb-30">
@@ -46,7 +46,7 @@ export default function AboutOne() {
                       />
                     </div>
                     <div className="text">
-                      <h4 className="title">{elm.title}</h4>
+                      <h4 className="title">{translations[elm.title]}</h4>
                       <p>{elm.description}</p>
                     </div>
                   </div>

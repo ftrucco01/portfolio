@@ -2,7 +2,7 @@ export const items = [
   {
     id: 1,
     icon: "/assets/img/design.svg",
-    title: "Ui/Ux Design",
+    title: "I_DO_SOFTWARE_DEVELOPMENT",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
     bg: "bg-prink",
@@ -10,7 +10,7 @@ export const items = [
   {
     id: 2,
     icon: "/assets/img/app-development.svg",
-    title: "App Development",
+    title: "I_DO_IA_INTEGRATIONS",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
     bg: "bg-catkrill",
@@ -18,7 +18,7 @@ export const items = [
   {
     id: 3,
     icon: "/assets/img/photograph.svg",
-    title: "Photography",
+    title: "I_DO_PROJECT_MANAGMENT",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
     bg: "bg-catkrill",
@@ -26,59 +26,9 @@ export const items = [
   {
     id: 4,
     icon: "/assets/img/webdev.svg",
-    title: "Web Development",
+    title: "I_DO_PROJECT_INNOVATIONS",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
     bg: "bg-prink",
-  },
-];
-export const itemsTwo = [
-  {
-    id: 1,
-    icon: "/assets/img/design.svg",
-    title: "Ui/Ux Design",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-prink",
-  },
-  {
-    id: 2,
-    icon: "/assets/img/app-development.svg",
-    title: "App Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-catkrill",
-  },
-  {
-    id: 3,
-    icon: "/assets/img/photograph.svg",
-    title: "Photography",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-prink",
-  },
-  {
-    id: 4,
-    icon: "/assets/img/webdev.svg",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-catkrill",
-  },
-  {
-    id: 5,
-    icon: "/assets/img/management.svg",
-    title: "Management",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-prink",
-  },
-  {
-    id: 6,
-    icon: "/assets/img/webdev.svg",
-    title: "Web Development",
-    description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
-    bg: "bg-catkrill",
   },
 ];
