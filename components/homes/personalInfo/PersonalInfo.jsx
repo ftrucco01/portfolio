@@ -59,12 +59,6 @@ export default function PersonalInfo() {
               </span>
               {translations.DOWNLOAD_CV}
             </a>
-            {/*<a className="btn-1" href="/cv.pdf" download >
-              <span style={{ color: "#fff" }} className="icon">
-                <i className="fa-regular fa-download"></i>
-              </span>
-              {translations.DOWNLOAD_CV}
-            </a> */}
           </div>
         </div>
       </div>

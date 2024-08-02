@@ -6,10 +6,11 @@ import { clientLogos } from "@/data/clientLogos";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { items } from "@/data/jobFeatures";
-import { bioData } from "@/data/bioData";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function AboutOne() {
+  const { translations } = useLanguage();
   const [showSlider, setShowSlider] = useState(false);
   useEffect(() => {
     setShowSlider(true);
@@ -19,9 +20,9 @@ export default function AboutOne() {
       <div className="bostami-page-content-wrap">
         <div className="section-wrapper pl-60 pr-60 pt-60">
           <div className="bostami-page-title-wrap mb-15">
-            <h2 className="page-title">about</h2>
-            <p>{bioData.descOne}</p>
-            <p>{bioData.descTwo}</p>
+            <h2 className="page-title">{translations.ABOUT_ME}</h2>
+            <p>{translations.ABOUT_ME_TEXT_1}</p>
+            <p>{translations.ABOUT_ME_TEXT_2}</p>
           </div>
         </div>
 

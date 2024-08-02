@@ -6,5 +6,8 @@
     "LOCATION": "Ubicación",
     "PHONE_ARG": "Teléfono (Argentina)",
     "PHONE_MEX": "Teléfono (Mexico)",
-    "CV_LINK": "/cv_spanish.pdf"
+    "CV_LINK": "/cv_spanish.pdf",
+    "ABOUT_ME": "Sobre mi",
+    "ABOUT_ME_TEXT_1": "Soy Ingeniero de Software con más de una década de experiencia en la industria, apasionado por la creación de soluciones tecnológicas integrales. Mi expertise abarca desde el backend robusto y eficiente hasta adaptaciones frontend atractivas y funcionales.",
+    "ABOUT_ME_TEXT_2": "Me he especializado en frameworks y tecnologías como Laravel, Symfony, NodeJs, Angular, React e Ionic, adaptándome a las necesidades de cada proyecto para ofrecer productos de alta calidad. También me dedico al desarrollo y despliegue de aplicaciones móviles para iOS y Android, asegurando experiencias de usuario fluidas y eficientes en dispositivos móviles."
 }
