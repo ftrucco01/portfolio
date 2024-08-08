@@ -1,7 +1,9 @@
+//icon: "/assets/img/design.svg",
+
 export const items = [
   {
     id: 1,
-    icon: "/assets/img/design.svg",
+    icon: "/assets/img/webdev.svg",
     title: "I_DO_SOFTWARE_DEVELOPMENT",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
@@ -17,7 +19,7 @@ export const items = [
   },
   {
     id: 3,
-    icon: "/assets/img/photograph.svg",
+    icon: "/assets/img/manager.svg",
     title: "I_DO_PROJECT_MANAGMENT",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
@@ -25,7 +27,7 @@ export const items = [
   },
   {
     id: 4,
-    icon: "/assets/img/webdev.svg",
+    icon: "/assets/img/photograph.svg",
     title: "I_DO_PROJECT_INNOVATIONS",
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",

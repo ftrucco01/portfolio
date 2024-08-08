@@ -13,11 +13,15 @@ export default function Header() {
     if (isDarkMode) {
       localStorage.setItem("idDarkMode", false);
       document.body.classList.remove("dark-theme");
+      document.documentElement.style.setProperty('--svg-fill-color', '#010002');
+      document.documentElement.style.setProperty('--svg-fill-color-dark', '#ffffff');
       document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-1.jpg)";
       setDarkMode(false);
     } else {
       localStorage.setItem("idDarkMode", true);
       document.body.classList.add("dark-theme");
+      document.documentElement.style.setProperty('--svg-fill-color', '#ffffff');
+      document.documentElement.style.setProperty('--svg-fill-color-dark', '#010002');
       document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-dark-1.jpg)";
       setDarkMode(true);
     }
@@ -28,9 +32,13 @@ export default function Header() {
     const isDarkMode = JSON.parse(currentState);
     if (isDarkMode) {
       document.body.classList.add("dark-theme");
+      document.documentElement.style.setProperty('--svg-fill-color', '#ffffff');
+      document.documentElement.style.setProperty('--svg-fill-color-dark', '#010002');
       document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-dark-1.jpg)";
     } else {
       document.body.classList.remove("dark-theme");
+      document.documentElement.style.setProperty('--svg-fill-color', '#010002');
+      document.documentElement.style.setProperty('--svg-fill-color-dark', '#ffffff');
       document.body.style.backgroundImage = "url(/assets/img/bg/page-bg-1.jpg)";
     }
   }, []);
