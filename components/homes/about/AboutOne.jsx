@@ -47,7 +47,7 @@ export default function AboutOne() {
                     </div>
                     <div className="text">
                       <h4 className="title">{translations[elm.title]}</h4>
-                      <p>{elm.description}</p>
+                      <p>{translations[elm.description]}</p>
                     </div>
                   </div>
                 </div>

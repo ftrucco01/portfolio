@@ -6,7 +6,7 @@ export const items = [
     icon: "/assets/img/webdev.svg",
     title: "I_DO_SOFTWARE_DEVELOPMENT",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "SOFTWARE_DEVELOPMENT_DESCRIPTION",
     bg: "bg-prink",
   },
   {
@@ -14,7 +14,7 @@ export const items = [
     icon: "/assets/img/app-development.svg",
     title: "I_DO_IA_INTEGRATIONS",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "IA_INTEGRATIONS_DESCRIPTION",
     bg: "bg-catkrill",
   },
   {
@@ -22,7 +22,7 @@ export const items = [
     icon: "/assets/img/manager.svg",
     title: "I_DO_PROJECT_MANAGMENT",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "SOFTWARE_DEVELOPMENT_DESCRIPTION",
     bg: "bg-catkrill",
   },
   {
@@ -30,7 +30,7 @@ export const items = [
     icon: "/assets/img/photograph.svg",
     title: "I_DO_PROJECT_INNOVATIONS",
     description:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat.",
+      "SOFTWARE_DEVELOPMENT_DESCRIPTION",
     bg: "bg-prink",
   },
 ];

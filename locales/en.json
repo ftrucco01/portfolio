@@ -14,5 +14,7 @@
     "I_DO_SOFTWARE_DEVELOPMENT": "Software Development",
     "I_DO_IA_INTEGRATIONS": "IA Integrations",
     "I_DO_PROJECT_MANAGMENT": "Project Managment",
-    "I_DO_PROJECT_INNOVATIONS": "Innovations (startUps)"
+    "I_DO_PROJECT_INNOVATIONS": "Innovations (startUps)",
+    "SOFTWARE_DEVELOPMENT_DESCRIPTION": "I transform ideas into solid digital solutions, focusing on scalability and adaptability.",
+    "IA_INTEGRATIONS_DESCRIPTION": "I apply AI to enhance accuracy and efficiency in various applications, from prediction to automation."
 }
