@@ -8,13 +8,14 @@
     "PHONE_MEX": "Phone (Mexico)",
     "CV_LINK": "/cv_english.pdf",
     "ABOUT_ME": "About me",
-    "ABOUT_ME_TEXT_1": "I am a Software Engineer with over a decade of experience in the industry, passionate about creating comprehensive technological solutions. My expertise spans from robust and efficient backend development to attractive and functional frontend adaptations.",
-    "ABOUT_ME_TEXT_2": "I specialize in frameworks and technologies such as Laravel, Symfony, NodeJs, Angular, React, and Ionic, adapting to the needs of each project to deliver high-quality products. I am also dedicated to the development and deployment of mobile applications for iOS and Android, ensuring smooth and efficient user experiences on mobile devices.",
+    "ABOUT_ME_TEXT_1": "I am a Software Engineer with a solid career in creating robust and efficient technological solutions, specializing in web and mobile applications. From backend architecture to frontend implementation, I optimize every detail to deliver a superior user experience. To learn more about my background and projects, I invite you to explore my CV or click on the detailed summary..",
     "WHAT_I_DO": "What I do?",
     "I_DO_SOFTWARE_DEVELOPMENT": "Software Development",
     "I_DO_IA_INTEGRATIONS": "IA Integrations",
     "I_DO_PROJECT_MANAGMENT": "Project Managment",
     "I_DO_PROJECT_INNOVATIONS": "Innovations (startUps)",
-    "SOFTWARE_DEVELOPMENT_DESCRIPTION": "I transform ideas into solid digital solutions, focusing on scalability and adaptability.",
-    "IA_INTEGRATIONS_DESCRIPTION": "I apply AI to enhance accuracy and efficiency in various applications, from prediction to automation."
+    "SOFTWARE_DEVELOPMENT_DESCRIPTION": "I transform innovative ideas into robust and solid digital solutions, focusing on both scalability and adaptability.",
+    "IA_INTEGRATIONS_DESCRIPTION": "I apply AI to enhance accuracy and efficiency in various applications, from prediction to automation.",
+    "PROJECT_MANAGMENT_DESCRIPTION": "I ensure excellence at every stage of the project, using agile methodologies to coordinate and oversee all aspects, ensuring high-quality results.",
+    "INNOVATION_DESCRIPTION": "I apply my software engineering experience to develop innovative solutions that enable startups to scale efficiently."
 }

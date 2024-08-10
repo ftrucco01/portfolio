@@ -32,7 +32,7 @@ function LanguageSwitcher({ currentLanguage, switchLanguage, isDarkMode }) {
 
   return (
     <div className="dark-btn dark-btn-stored mode-btn" onClick={switchLanguage} style={style}>
-      {isClient ? (currentLanguage === 'en' ? '🇪🇸' : '🇬🇧') : null}
+      {isClient ? (currentLanguage === 'en' ? '🇦🇷' : '🇬🇧') : null}
     </div>
   );
 }

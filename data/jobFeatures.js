@@ -22,7 +22,7 @@ export const items = [
     icon: "/assets/img/manager.svg",
     title: "I_DO_PROJECT_MANAGMENT",
     description:
-      "SOFTWARE_DEVELOPMENT_DESCRIPTION",
+      "PROJECT_MANAGMENT_DESCRIPTION",
     bg: "bg-catkrill",
   },
   {
@@ -30,7 +30,7 @@ export const items = [
     icon: "/assets/img/photograph.svg",
     title: "I_DO_PROJECT_INNOVATIONS",
     description:
-      "SOFTWARE_DEVELOPMENT_DESCRIPTION",
+      "INNOVATION_DESCRIPTION",
     bg: "bg-prink",
   },
 ];

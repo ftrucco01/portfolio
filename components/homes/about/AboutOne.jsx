@@ -22,7 +22,6 @@ export default function AboutOne() {
           <div className="bostami-page-title-wrap mb-15">
             <h2 className="page-title">{translations.ABOUT_ME}</h2>
             <p>{translations.ABOUT_ME_TEXT_1}</p>
-            <p>{translations.ABOUT_ME_TEXT_2}</p>
           </div>
         </div>
 

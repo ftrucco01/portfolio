@@ -8,13 +8,14 @@
     "PHONE_MEX": "Teléfono (Mexico)",
     "CV_LINK": "/cv_spanish.pdf",
     "ABOUT_ME": "Sobre mi",
-    "ABOUT_ME_TEXT_1": "Soy Ingeniero de Software con más de una década de experiencia en la industria, apasionado por la creación de soluciones tecnológicas integrales. Mi expertise abarca desde el backend robusto y eficiente hasta adaptaciones frontend atractivas y funcionales.",
-    "ABOUT_ME_TEXT_2": "Me he especializado en frameworks y tecnologías como Laravel, Symfony, NodeJs, Angular, React e Ionic, adaptándome a las necesidades de cada proyecto para ofrecer productos de alta calidad. También me dedico al desarrollo y despliegue de aplicaciones móviles para iOS y Android, asegurando experiencias de usuario fluidas y eficientes en dispositivos móviles.",
+    "ABOUT_ME_TEXT_1": "Soy Ingeniero de Software con una sólida carrera en la creación de soluciones tecnológicas robustas y eficientes, especializándome en aplicaciones web y móviles. Desde la arquitectura backend hasta la implementación frontend, optimizo cada detalle para brindar una experiencia de usuario superior. Para conocer más sobre mi trayectoria y proyectos, te invito a explorar mi CV o hacer clic en el resumen detallado..",
     "WHAT_I_DO": "Que hago?",
     "I_DO_SOFTWARE_DEVELOPMENT": "Desarrollo de Software",
     "I_DO_IA_INTEGRATIONS": "Integración con IA",
     "I_DO_PROJECT_MANAGMENT": "Gestión de Proyectos",
     "I_DO_PROJECT_INNOVATIONS": "Innovación (startUps)",
     "SOFTWARE_DEVELOPMENT_DESCRIPTION": "Transformo ideas en soluciones digitales sólidas, enfocándome en la escalabilidad y la adaptabilidad.",
-    "IA_INTEGRATIONS_DESCRIPTION": "Aplico IA para mejorar la precisión y eficiencia en diversas aplicaciones, desde la predicción hasta la automatización."
+    "IA_INTEGRATIONS_DESCRIPTION": "Aplico IA para mejorar la precisión y eficiencia en diversas aplicaciones, desde la predicción hasta la automatización.",
+    "PROJECT_MANAGMENT_DESCRIPTION": "Garantizo la excelencia en cada etapa del proyecto, aplicando metodologías ágiles para coordinar y supervisar todos los aspectos y ofrecer resultados de alta calidad.",
+    "INNOVATION_DESCRIPTION": "Integro mi amplia experiencia en ingeniería de software para desarrollar soluciones innovadoras y efectivas que permiten a las startups escalar con máxima eficiencia."
 }
