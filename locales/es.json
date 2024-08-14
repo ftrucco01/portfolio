@@ -17,5 +17,27 @@
     "SOFTWARE_DEVELOPMENT_DESCRIPTION": "Transformo ideas en soluciones digitales sólidas, enfocándome en la escalabilidad y la adaptabilidad.",
     "IA_INTEGRATIONS_DESCRIPTION": "Aplico IA para mejorar la precisión y eficiencia en diversas aplicaciones, desde la predicción hasta la automatización.",
     "PROJECT_MANAGMENT_DESCRIPTION": "Garantizo la excelencia en cada etapa del proyecto, aplicando metodologías ágiles para coordinar y supervisar todos los aspectos y ofrecer resultados de alta calidad.",
-    "INNOVATION_DESCRIPTION": "Integro mi amplia experiencia en ingeniería de software para desarrollar soluciones innovadoras y efectivas que permiten a las startups escalar con máxima eficiencia."
+    "INNOVATION_DESCRIPTION": "Integro mi amplia experiencia en ingeniería de software para desarrollar soluciones innovadoras y efectivas que permiten a las startups escalar con máxima eficiencia.",
+
+    "WEB_DEVELOPMENT": "Desarrollo Web",
+    "BACKEND_DEVELOPMENT": "Desarrollo Backend",
+    "FRONTEND_DEVELOPMENT": "Desarrollo Frontend",
+    "SOFTWARE_ARCHITECTURE": "Arquitectura de Software",
+    "DATABASE_MANAGEMENT": "Gestión de Bases de Datos",
+    "MOBILE_DEVELOPMENT": "Desarrollo Móvil",
+    "SYSTEMS_OPTIMIZATION_PERFORMANCE": "Optimización y Performance",
+    "MICROSERVICES_IMPLEMENTATION": "Implementación de Microservicios",
+    "API_INTEGRATION": "Integración de APIs",
+    "APPLICATION_DEPLOYMENT": "Despliegue de Aplicaciones",
+    "UNIT_TESTING": "Pruebas Unitarias",
+    "OWASP_SECURITY_PROTECTION": "Protección contra Vulnerabilidades OWASP",
+    "PROCESS_AUTOMATION": "Automatización de Procesos",
+    "PROJECT_MANAGEMENT": "Gestión de Proyectos",
+    "PROBLEM_ANALYSIS_RESOLUTION": "Análisis y Resolución de Problemas",
+    "OAUTH2_IMPLEMENTATION": "Implementación de OAuth 2.0",
+    "CACHE_MANAGEMENT": "Manejo de Cache",
+    "SQL_QUERY_OPTIMIZATION": "Optimización de Consultas SQL",
+    "SEARCH_ENGINE_INTEGRATION": "Integración de Motores de Búsqueda",
+    "REAL_TIME_COMMUNICATION_SOLUTIONS": "Desarrollo de Soluciones de Comunicación en Tiempo Real",
+    "RESPONSIVE_DESIGN_IMPLEMENTATION": "Implementación de Responsive Design"
 }
