@@ -54,64 +54,9 @@ export default function AboutOne() {
             </div>
           </div>
         </div>
-
-        <div className="section-wrapper bg-light-white-2 pt-45 pb-60 pl-60 pr-60">
-          <div className="bostami-section-title-wrap text-center mb-50">
-            <h3 className="section-title">Customers</h3>
-          </div>
-
-          <div className="bostami-client-slider">
-            <div className="swiper-container client_slide_active">
-              {showSlider && (
-                <Swiper
-                  // {...setting}
-                  modules={[Navigation, Pagination, Autoplay]}
-                  // loop={true}
-                  spaceBetween={30}
-                  slidesPerView={2}
-                  loop={true}
-                  autoplay={{
-                    delay: 3000, // Time between each slide (in milliseconds)
-                    disableOnInteraction: false, // Set to false if you want the auto slider to continue even when the user interacts with the slider (e.g., clicking on a slide).
-                  }}
-                  breakpoints={{
-                    // when window width is >= 576px
-                    450: {
-                      slidesPerView: 3,
-                    },
-                    // when window width is >= 768px
-                    768: {
-                      slidesPerView: 4,
-                    },
-                    1200: {
-                      // when window width is >= 992px
-                      slidesPerView: 5,
-                    },
-                  }}
-                >
-                  {clientLogos.map((elm, i) => (
-                    <SwiperSlide key={i}>
-                      <div className="swiper-slide">
-                        <Image
-                          height={62}
-                          width={264}
-                          style={{ height:'62px',width:'fit-content'}}
-                          className="bostami-client-slider-logo"
-                          src={elm.imgSrc}
-                          alt="client"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              )}
-            </div>
-          </div>
-        </div>
-
         <div className="footer-copyright text-center pt-25 pb-25">
           <span>
-            © {new Date().getFullYear()} All Rights Reserved by elite-themes24.
+            © {new Date().getFullYear()} Francisco Trucco. {translations.FOOTER_TEXT}
           </span>
         </div>
       </div>
