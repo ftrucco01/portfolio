@@ -1,11 +1,13 @@
 import { skillData } from "@/data/skills";
 import React from "react";
-
+import { useLanguage } from "@/context/LanguageContext";
 export default function Skills() {
+  const { translations } = useLanguage();
+  
   return (
     <div className="col-xl-6 col-lg-7">
       <div className="bostami-section-title-wrap mb-20">
-        <h4 className="section-title">Working Skills</h4>
+        <h4 className="section-title">{translations.SKILLS}</h4>
       </div>
 
       <div className="skill-bar-wrap">

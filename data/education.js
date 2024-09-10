@@ -2,15 +2,15 @@ export const education = [
   {
     id: 1,
     bgClass: "bg-prink",
-    session: "2021-2023",
-    cardTitle: "Ph.D in Horriblensess",
+    session: "MAY_2013",
+    cardTitle: "CERTIFIED_1",
     cardSubtitleSecondary: "University,",
-    locatopn: "Los Angeles, CA",
+    locatopn: "UTN_UNIVERSITY",
   },
   {
     id: 2,
     bgClass: "bg-catkrill",
-    session: "2017-2021",
+    session: "JUNE_2012",
     cardTitle: "Computer Science",
     cardSubtitleSecondary: "Imperialize",
     locatopn: "Technical Institute",
@@ -18,7 +18,7 @@ export const education = [
   {
     id: 3,
     bgClass: "bg-prink",
-    session: "2015-2017",
+    session: "JANUARY_2010",
     cardTitle: "Graphic Designer",
     cardSubtitleSecondary: "Web Graphy,",
     locatopn: "Los Angeles, CA",
