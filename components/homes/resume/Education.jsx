@@ -31,7 +31,7 @@ export default function Education() {
           >
             <span className="card-subtitle">{translations[elm.session] || elm.session}</span>
             <h6 className="card-title">
-              {translations[elm.cardTitle] || elm.cardTitle} <span>, {translations[elm.cardSubtitleSecondary] || elm.cardSubtitleSecondary}</span>
+              {translations[elm.cardTitle] || elm.cardTitle} <span> {translations[elm.cardSubtitleSecondary] || elm.cardSubtitleSecondary}</span>
             </h6>
             <p className="card-text">{translations[elm.location] || elm.location}</p>
           </div>
