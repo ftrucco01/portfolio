@@ -50,5 +50,7 @@
     "CERTIFIED_1": "Web Developer Certified",
     "UTN_UNIVERSITY": "UTN University",
     "CERTIFIED_2": "Software Developer Certified",
-    "CERTIFIED_3": "Computer Engineering"
+    "CERTIFIED_3": "Computer Engineering",
+    "EXPERIENCE": "Experience",
+    "SOFTWARE_DEVELOPER": "Software Developer"
 }

@@ -50,5 +50,7 @@
     "CERTIFIED_1": "Certificado Desarrollador Web",
     "UTN_UNIVERSITY": "Universidad UTN",
     "CERTIFIED_2": "Certificado Desarrollador de Software",
-    "CERTIFIED_3": "Ingenieria Informatica"
+    "CERTIFIED_3": "Ingenieria Informatica",
+    "EXPERIENCE": "Experiencia",
+    "SOFTWARE_DEVELOPER": "Desarrollador de Software"
 }

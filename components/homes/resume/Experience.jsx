@@ -1,8 +1,11 @@
 import { experiences } from "@/data/experience";
 import Image from "next/image";
 import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Experience() {
+  const { translations } = useLanguage();
+
   return (
     <div className="col-xl-6 col-lg-5">
       <div className="bostami-section-title-wrap mb-20">
@@ -13,7 +16,7 @@ export default function Experience() {
             src="/assets/img/icon/exper-icon.png"
             alt="experience"
           />
-          experience
+          {translations.EXPERIENCE}
         </h4>
       </div>
 
@@ -24,8 +27,8 @@ export default function Experience() {
             i + 1 != experiences.length && "mb-20"
           } `}
         >
-          <span className="card-subtitle">{elm.session}</span>
-          <h6 className="card-title">{elm.role}</h6>
+          <span className="card-subtitle">{translations[elm.session] || elm.session}</span>
+          <h6 className="card-title">{translations[elm.role] || elm.role}</h6>
           <p className="card-text">{elm.company}</p>
         </div>
       ))}

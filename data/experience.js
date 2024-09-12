@@ -9,15 +9,30 @@ export const experiences = [
   {
     id: 2,
     bgClass: "bg-prink",
-    session: "2015-2017",
-    role: "Cr. Web Developer",
-    company: "ib-themes ltd.",
+    session: "2021-2023",
+    role: "SOFTWARE_DEVELOPER",
+    company: "Asap Consulting S.A.",
   },
   {
     id: 3,
     bgClass: "bg-catkrill",
-    session: "2014 - 2015",
-    role: "Jr. Web Developer",
-    company: "Creative Gigs.",
+    session: "2016 - 2021",
+    role: "SOFTWARE_DEVELOPER",
+    company: "Teceng Gaming S.A."
   },
+  {
+    id: 4,
+    bgClass: "bg-catkrill",
+    session: "2014 - 2015",
+    role: "SOFTWARE_DEVELOPER",
+    company: "Intraway"
+  },
+  {
+    id: 3,
+    bgClass: "bg-catkrill",
+    session: "2013 - 2014",
+    role: "SOFTWARE_DEVELOPER",
+    company: "Bvision",
+  },
+
 ];
