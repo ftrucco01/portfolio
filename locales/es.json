@@ -43,7 +43,7 @@
     "KNOWLEDGES": "Conocimientos En",
     "SKILLS": "Habilidades",
     "RESUME": "Resumen",
-    "FOOTER_TEXT": "Vamos a construir algo increíble juntos.",
+    "FOOTER_TEXT": "Vamos a construir algo increíble.",
     "MAY_2013": "Mayo 2013",
     "JUNE_2012": "Junio 2012",
     "JANUARY_2010": "Enero 2010",
@@ -52,5 +52,6 @@
     "CERTIFIED_2": "Certificado Desarrollador de Software",
     "CERTIFIED_3": "Ingenieria Informatica",
     "EXPERIENCE": "Experiencia",
-    "SOFTWARE_DEVELOPER": "Desarrollador de Software"
+    "SOFTWARE_DEVELOPER": "Desarrollador de Software",
+    "ABOUT": "Acerca"
 }

@@ -5,8 +5,10 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { createPortal } from "react-dom";
 import { menuItems } from "@/data/menu";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function MenuTwo() {
+  const { translations } = useLanguage();
   const pathname = usePathname();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -47,7 +49,7 @@ ZwwmayiQ9Qmqt6nkWXiOSr9AIMCugcI7XpetjmDBr2+cTmzpRzoE
                     <span>
                       <i style={{ fontSize: "25px" }} className={elm.icon}></i>
                     </span>
-                    {elm.text}
+                    {translations[elm.text] || elm.text}
                   </Link>
                 ) : (
                   <button
@@ -66,7 +68,7 @@ ZwwmayiQ9Qmqt6nkWXiOSr9AIMCugcI7XpetjmDBr2+cTmzpRzoE
                     <span>
                       <i style={{ fontSize: "25px" }} className={elm.icon}></i>
                     </span>
-                    {elm.text}
+                    {translations[elm.text] || elm.text}
                   </button>
                 )}
               </li>
