@@ -1,204 +1,382 @@
-<!DOCTYPE html>
-<html lang="en">
+<!Doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <title>Bostami Html Template</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bostami - Home Page One</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="bostami-template/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bostami-template/assets/css/animate.min.css">
-    <link rel="stylesheet" href="bostami-template/assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="bostami-template/assets/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.modal.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swipper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
 
+    <div class="page-wrapper home-1" data-background="assets/img/bg/page-bg-1.jpg">
 
-    <!-- hero area -->
-    <div class="hero-area">
-        <div class="container">
-            <div class="content-flex">
-                <div class="hero-content-wrap">
-                    <img class="site-logo" src="img/logo-preview.png" alt="">
-                    <h1 class="title">Modern,Trending & Creative Portfolio <br>
-                        <span>HTML Template</span>
-                    </h1>
-                    <div class="hero-btn-wrap">
-                        <a class="btn btn-1" href="#demo">view demo <i class="far fa-arrow-down"></i></a>
-                        <a class="btn btn-2" target="_blank" rel="noopener noreferrer"
-                            href="https://themeforest.net/item/bostami-personal-portfolio-bootstrap-5-html-template/46757666">Purchase
-                            Now</a>
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="loader_line"></div>
+        </div>
+        <!-- /PRELOADER -->
+
+        <!-- header-start -->
+        <div class="bostami-header-area mb-30 z-index-5">
+            <div class="container">
+                <div class="bostami-header-wrap">
+                    <div class="row align-items-center">
+
+                        <!-- logo -->
+                        <div class="col-6">
+                            <div class="bostami-header-logo">
+                                <a class="site-logo" href="../index.html">
+                                    <img src="assets/img/logo/logo-2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- menu btn -->
+                        <div class="col-6">
+                            <div class="bostami-header-menu-btn text-right">
+                                <div class="dark-btn dark-btn-stored dark-btn-icon">
+                                    <i class="fa-light fa-moon"></i>
+                                    <i class="fa-light fa-sun"></i>
+                                </div>
+                                <div class="menu-btn toggle_menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
+
+                <!-- mobile menu -->
+                <div class="mobile-menu-wrap">
+                    <div class="mobile-menu mobile_menu">
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
+        <!-- header-end -->
 
-    <!-- hemo demo -->
-    <div class="home-demo-area bg-black " id="demo">
-        <div class="container">
-            <div class="section-title-wrap text-center mb-70">
-                <h1 class="main-title">home demo</h1>
-                <img class="bg-shape" src="img/preview.png" alt="">
-                <h2 class="section-title">03 Awesome Light & Dark Demo</h2>
-                <p class="section-pera">Bostami build with Modern, Elegant & Beautiful trendng
-                    <br> technology like Bootstrap 5 HTML template.
-                </p>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <a class="demo-link" target="_blank" rel="noopener noreferrer" href="bostami-template/index.html">
-                        <span>
-                            <img src="img/homeblue.png" alt="">
-                        </span>
-                        <span class="demo-title">Sidebar With Box</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <a class="demo-link" target="_blank" rel="noopener noreferrer" href="bostami-template/home-2.html">
-                        <span>
-                            <img src="img/hometwolight.png" alt="">
-                        </span>
-                        <span class="demo-title">Regular Layout</span>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <a class="demo-link" target="_blank" rel="noopener noreferrer" href="bostami-template/home-3.html">
-                        <span>
-                            <img src="img/homeonelight.png" alt="">
-                        </span>
-                        <span class="demo-title">Box Layout</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- feature -->
-    <div class="home-demo-area bg-gray">
-
-        <div class="container">
-            <div class="section-title-wrap text-center mb-60">
-                <h1 class="main-title">Salient Features</h1>
-                <img class="bg-shape" src="img/preview.png" alt="">
-            </div>
-
+        <div class="container z-index-3">
             <div class="row">
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="img/1.png" alt="">
-                        </div>
-                        <h3 class="feature-title">HTML 5</h3>
-                        <p class="feature-text">HTML5 has transformed web development by introducing powerful features
-                            like semantic elements, multimedia support, enhanced form controls, dynamic graphics, and
-                            simplified media embedding. It's the future of the web.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="img/2.png" alt="">
-                        </div>
-                        <h3 class="feature-title">CSS 3</h3>
-                        <p class="feature-text">CSS3, the latest version of Cascading Style Sheets, empowers web
-                            designers with advanced styling capabilities, including animations, transitions, gradients,
-                            shadows, and flexible layouts, enhancing the visual appeal and user experience of websites.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="img/3.png" alt="">
-                        </div>
-                        <h3 class="feature-title">Bootstrap5+</h3>
-                        <p class="feature-text">Bootstrap 5, the popular front-end framework, simplifies responsive web
-                            design with its extensive library of pre-built components, grid system, and CSS utilities,
-                            allowing developers to create modern and mobile-friendly websites quickly.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="img/8.png" alt="">
-                        </div>
-                        <h3 class="feature-title">Semantic Markup</h3>
-                        <p class="feature-text">Semantic markup in HTML provides a structural meaning to web content,
-                            allowing search engines and assistive technologies to better understand and interpret the
-                            information, resulting in improved accessibility and SEO.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="img/5.png" alt="">
-                        </div>
-                        <h3 class="feature-title">Modern Ui</h3>
-                        <p class="feature-text">
-                            Modern UI design focuses on simplicity, clean aesthetics, intuitive navigation, and visual
-                            appeal. It embraces minimalism, flat design, whitespace, vibrant colors, and responsive
-                            layouts, creating engaging and user-friendly digital experiences.</p>
-                    </div>
-                </div>
+                <!-- parsonal-info-start -->
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="bostami-parsonal-info-area">
+                        <div class="bostami-parsonal-info-wrap">
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature-item">
-                        <div class="feature-icon">
-                            <img src="img/9.png" alt="">
+                            <!-- img -->
+                            <div class="bostami-parsonal-info-img">
+                                <img src="assets/img/parsonal-info/parson-img-1.png" alt="avatar">
+                            </div>
+
+                            <!-- name -->
+                            <h4 class="bostami-parsonal-info-name">
+                                <a href="#">Bostami Hassan</a>
+                            </h4>
+                            <span class="bostami-parsonal-info-bio mb-15">Ui/Ux Designer</span>
+
+                            <!-- socail link -->
+                            <ul class="bostami-parsonal-info-social-link mb-30">
+                                <li>
+                                    <a href="#" class="facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- contact -->
+                            <div class="bostami-parsonal-info-contact mb-30">
+                                <div class="bostami-parsonal-info-contact-item phone">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Phone</span>
+                                        <p>+123 456 7890</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="bostami-parsonal-info-contact-item email">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Email</span>
+                                        <p>example@mail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="bostami-parsonal-info-contact-item location">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Location</span>
+                                        <p>Hong kong china</p>
+                                    </div>
+                                </div>
+
+                                <div class="bostami-parsonal-info-contact-item calendar">
+                                    <div class="icon">
+                                        <i class="fa-light fa-calendar-days"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Birthday</span>
+                                        <p>May 27, 1990</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- cv button -->
+                            <div class="bostami-parsonal-info-btn">
+                                <a class="btn-1" href="#">
+                                    <span class="icon">
+                                        <i class="fa-regular fa-download"></i>
+                                    </span>
+                                    download cv
+                                </a>
+                            </div>
+
                         </div>
-                        <h3 class="feature-title">Working Contact Form</h3>
-                        <p class="feature-text">A working contact form is an essential component of a website, allowing
-                            visitors to easily communicate with the website owner. It captures user input, validates
-                            data, and sends messages, enhancing user engagement and facilitating effective
-                            communication.</p>
                     </div>
                 </div>
+                <!-- personal-info-end -->
 
+                <!-- about-page-start -->
+                <div class="col-xxl-8 col-xl-9">
+                    <div class="bostami-page-content-wrap">
+
+                        <!-- page title -->
+                        <div class="section-wrapper pl-60 pr-60 pt-60">
+                            <div class="bostami-page-title-wrap mb-35">
+                                <h2 class="page-title">about</h2>
+                                <p>I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web
+                                    development and print media. I enjoy turning complex problems into simple, beautiful
+                                    and intuitive designs.</p>
+                                <p>My aim is to bring across your message and identity in the most creative way. I
+                                    created web design for many famous brand companies.</p>
+                            </div>
+                        </div>
+
+                        <!-- what-do -->
+                        <div class="section-wrapper pl-60 pr-60">
+
+                            <div class="bostami-section-title-wrap mb-30">
+                                <h3 class="section-title">What I do!</h3>
+                            </div>
+
+                            <div class="bostami-what-do-wrap mb-30">
+                                <div class="row">
+
+                                    <!-- single item -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item bg-prink">
+                                            <div class="icon">
+                                                <i class="fa-light fa-swatchbook"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">Ui/Ux Design</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    euismod tincidunt volutpat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item bg-catkrill">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-grid-2"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">App Development</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    euismod tincidunt volutpat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item  bg-catkrill">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-camera-retro"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">Photography</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    euismod tincidunt volutpat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single item -->
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6">
+                                        <div class="bostami-what-do-item bg-prink bg-blue">
+                                            <div class="icon">
+                                                <i class="fa-regular fa-code"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h4 class="title">Web Development</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    euismod tincidunt volutpat.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- client -->
+                        <div class="section-wrapper bg-light-white-2 pt-45 pb-60 pl-60 pr-60">
+
+                            <div class="bostami-section-title-wrap text-center mb-50">
+                                <h3 class="section-title">clinet</h3>
+                            </div>
+
+                            <div class="bostami-client-slider">
+                                <div class="swiper-container client_slide_active">
+                                    <div class="swiper-wrapper">
+
+                                        <!-- single item -->
+                                        <div class="swiper-slide">
+                                            <img class="bostami-client-slider-logo"
+                                                src="assets/img/client/client-logo-1.png" alt="">
+                                        </div>
+
+                                        <!-- single item -->
+                                        <div class="swiper-slide">
+                                            <img class="bostami-client-slider-logo"
+                                                src="assets/img/client/client-logo-2.png" alt="">
+                                        </div>
+
+                                        <!-- single item -->
+                                        <div class="swiper-slide">
+                                            <img class="bostami-client-slider-logo"
+                                                src="assets/img/client/client-logo-3.png" alt="">
+                                        </div>
+
+                                        <!-- single item -->
+                                        <div class="swiper-slide">
+                                            <img class="bostami-client-slider-logo"
+                                                src="assets/img/client/client-logo-4.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- footer copyright -->
+                        <div class="footer-copyright text-center pt-25 pb-25">
+                            <span>© 2024 All Rights Reserved by <a href="https://themeforest.net/user/elite-themes24"
+                                    target="_blank" rel="noopener noreferrer">elite-themes24</a>.</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- about-page-end -->
+
+                <!-- main-menu-start -->
+                <div class="col-xxl-1 d-xxl-block d-none">
+                    <div class="bostami-main-menu-wrap">
+                        <nav class="bastami-main-menu main_menu">
+                            <ul>
+                                <li class="active">
+                                    <a href="index.html">
+                                        <span>
+                                            <i class="fa-light fa-address-card"></i>
+                                        </span>
+                                        about
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="resume.html">
+                                        <span>
+                                            <i class="fa-light fa-file-user"></i>
+                                        </span>
+                                        Resume
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="portfolio.html">
+                                        <span>
+                                            <i class="fa-light fa-briefcase"></i>
+                                        </span>
+                                        Works
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">
+                                        <span>
+                                            <i class="fa-light fa-newspaper"></i>
+                                        </span>
+                                        Blogs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">
+                                        <span>
+                                            <i class="fa-light fa-address-book"></i>
+                                        </span>
+                                        contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- main-menu-end -->
             </div>
-
         </div>
+
     </div>
 
-    <!-- buy -->
-    <div class="home-demo-area bg-black">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="title">Purchase Bostami & Build Your Dream <br> Modern
-                    <span>Bootstrap 5 HTML Portfolio </span> Template.
-                </h2>
-                <a class="btn btn-1" target="_blank" rel="noopener noreferrer"
-                    href="https://themeforest.net/user/elite-themes24">Purchase
-                    Now</a>
-            </div>
-        </div>a
-    </div>
-
-    <div class="copy-right">
-        <div class="text-center">
-            <span>© 2024 All Rights Reserved by <a target="_blank" rel="noopener noreferrer"
-                    href="https://themeforest.net/user/elite-themes24">elite-themes</a>.</span>
-        </div>
-    </div>
-
-
-    <!-- <script src="bostami-template/assets/js/jquery.min.js"></script>
-    <script src="bostami-template/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="bostami-template/assets/js/wow.js"></script>
-    <script src="bostami-template/assets/js/appear.min.js"></script> -->
-    <!-- <script src="bostami-template/assets/js/main.js"></script> -->
-
+    <!-- JS here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swipper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.modal.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
-
 
 </html>

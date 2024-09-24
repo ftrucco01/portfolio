@@ -1,0 +1,31 @@
+# Ignorar archivos de sistema
+.DS_Store
+
+# Ignorar imágenes y archivos dentro de la carpeta img
+img/
+
+# Ignorar archivos CSS, JS y otros específicos si no quieres rastrearlos
+*.css
+*.js
+
+# Ignorar cualquier archivo HTML no deseado
+*.html
+
+# Ignorar la carpeta de assets
+assets/
+
+# Ignorar todas las carpetas de salida temporales de compilación
+build/
+dist/
+node_modules/
+
+# Ignorar configuraciones específicas del editor o entorno de desarrollo
+.idea/
+.vscode/
+*.log
+
+# Ignorar archivos temporales o de respaldo
+*~
+*.swp
+*.bak
+*.tmp
